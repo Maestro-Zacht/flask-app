@@ -14,3 +14,5 @@ Question 8: What happens when you commit code that doesn’t follow formatting/l
     - Screenshots
 Question 9: How do you retrieve the initial admin password for Jenkins?
     - it is printed in the logs of the container which can be accessed using docker logs command
+Question 10: What stages are included in the pipeline, and what does each one do?
+    - There is only 1 stage that prints the python version
