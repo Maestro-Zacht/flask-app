@@ -1,0 +1,14 @@
+Question 1: What is the purpose of requirements.txt?
+    - The purporse of this file is having a list of versioned dependencies that the application needs.
+Question 2: What message do you see when accessing the app in your browser?
+    - I can see the string we wrote in the app.py file: Hello, Kubernetes!
+Question 3: What does the docker run command do, and why is -p 8080:8080 necessary?
+    - docker run creates the container from the image with optional parameters, such as -p 8080:8080 which is used to allow the host to access the port 8080 of the container network namespace.
+Question 4: What is the difference between a Deployment and a Service in Kubernetes?
+    - The Deployment manages the replicaset and it is used to deploy the images on the cluster, while the Service is used to define how to connect to the Deployment
+Question 5: What is the external IP of your service, and how do you access it?
+    - We have defined a ClusterIP service, so the app is not available outside of the cluster. In order to access it, we could change the service to NodePort or use the command kubectl port-forward
+Question 6: What happens when you scale the deployment to 4 replicas? (Hint: Use kubectl scale deployment flask-app --replicas=4.)
+    - We can see that kubernetes creates two extra container using the kubectl get pods command
+Question 8: What happens when you commit code that doesn’t follow formatting/linting rules?
+    - Screenshots
