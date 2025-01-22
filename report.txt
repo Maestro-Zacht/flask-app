@@ -12,3 +12,5 @@ Question 6: What happens when you scale the deployment to 4 replicas? (Hint: Use
     - We can see that kubernetes creates two extra container using the kubectl get pods command
 Question 8: What happens when you commit code that doesn’t follow formatting/linting rules?
     - Screenshots
+Question 9: How do you retrieve the initial admin password for Jenkins?
+    - it is printed in the logs of the container which can be accessed using docker logs command
